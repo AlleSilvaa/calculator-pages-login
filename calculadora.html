@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/calc.css">
+    <script src="./js/calc.js" defer></script>
+
+    <title>CALCULADORA</title>
+</head>
+<body>
+    
+    <div class="calc">
+        <form action="" method="get" onsubmit="return false">
+            
+            <div class="visor-calc">
+                <input type="text" name="visor" id="idVisor" placeholder="0">
+            </div>
+            <div class="btn-calc">
+                <button value="1" id="btn-1" onclick="insereNumero(this,idVisor)">1</button>
+                <button value="2" id="btn-2" onclick="insereNumero(this,idVisor)">2</button>
+                <button value="3" id="btn-3" onclick="insereNumero(this,idVisor)">3</button>
+                <button value="4" id="btn-4" onclick="insereNumero(this,idVisor)">4</button>
+                <button value="5" id="btn-5" onclick="insereNumero(this,idVisor)">5</button>
+                <button value="6" id="btn-6" onclick="insereNumero(this,idVisor)">6</button>
+                <button value="7" id="btn-7" onclick="insereNumero(this,idVisor)">7</button>
+                <button value="8" id="btn-8" onclick="insereNumero(this,idVisor)">8</button>
+                <button value="9" id="btn-9" onclick="insereNumero(this,idVisor)">9</button>
+                <button value="0" id="btn-0" onclick="insereNumero(this,idVisor)">0</button>
+            </div>
+            <div class="oper-calc">
+                <button value="+" id="btnAdicao" onclick="insereNumero(this,idVisor)">+</button>
+                <button value="-" id="btnSubtracao" onclick="insereNumero(this,idVisor)">-</button>
+                <button value="*" id="btnMultiplicacao" onclick="insereNumero(this,idVisor)">x</button>
+                <button value="/" id="btnDivisao" onclick="insereNumero(this,idVisor)">÷</button>
+                <button value="=" id="btnEq" onclick="resultado(idVisor)">=</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

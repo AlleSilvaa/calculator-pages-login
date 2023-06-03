@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Layout</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+
+    <!-- <script>
+        //COMENTÁRIO DE LINHA
+        /*
+            COMENTÁRIO DE BLOCO
+        */
+
+        //Declarando variáveis com a palavra reservada var.
+        var nr1 = 10;
+        var nr2 = 5;
+
+        //Realizando a soma dos valores direto!
+        console.log(nr1+nr2);
+
+        //Declarando variáveis com a palavra reservada var.
+        var nr3 = "10";
+        var nr4 = "5";
+
+        //Realizando a soma dos valores direto!
+        console.log(nr3+nr4);
+        //Utilizando uma função interna de parseamento
+        console.log( parseInt(nr3) + parseInt(nr4));
+
+        //Realizando a subtração dos valores direto!
+        console.log("RESULTADO : " + (parseInt(nr3) - parseInt(nr4)));
+
+    </script> -->
+
+    <script src="./js/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img src="./img/logo.png" alt="Monitor de computador.">
+        <nav>
+            <a class="tit-sec" href="./index.html">Home</a>
+            <a href="./info.html">Info</a>
+            <a href="#">Item-3</a>
+        </nav>
+    </header>
+
+    <h2 class="tit-sec">Seção de Fotos</h2>
+
+    <button id="meu-btn"><span>CLICK</span></button>
+
+    <section class="conteudo">
+        <div>
+            <img src="./img/lobo1.jpg" alt="Lobo">
+            <p>Legenda</p>
+        </div>
+        <div>
+            <img src="./img/lobo2.jpg" alt="Lobo">
+            <p>Legenda</p>
+        </div>
+        <div>
+            <img src="./img/lobo3.jpg" alt="Lobo">
+            <p>Legenda</p>
+        </div>
+        <div>
+            <img src="./img/lobo4.jpg" alt="Lobo">
+            <p>Legenda</p>
+        </div>
+        <div>
+            <img src="./img/lobo5.jpg" alt="Lobo">
+            <p>Legenda</p>
+        </div>
+        <div>
+            <img src="./img/lobo6.jpg" alt="Lobo">
+            <p>Legenda</p>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <h2>Fale Conosco</h2>
+        <nav>
+            <a href="#"><img src="./img/social-1.png" alt="Logo github"></a>
+            <a href="#"><img src="./img/social-2.png" alt="Logo facebook"></a>
+            <a href="#"><img src="./img/social-3.png" alt="Logo twitter"></a>
+        </nav>
+        <div>
+            <form action="index.html" method="POST" onsubmit="return false">
+                <fieldset>
+                    <legend>Login</legend>
+                    <div>
+                        <label class="lbl-txt" for="idEmail">Email</label>
+                        <input type="email" name="txtEmail" id="idEmail" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label class="lbl-txt" for="idPass">Senha</label>
+                        <input type="password" name="txtPass" id="idPass" placeholder="Pass"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Precisa conter no mínimo 8 caractéres e um em maiusculo e pelo menos um em minusculo.">
+                    </div>
+                    <div>
+                        <label for="idGrava">Gravar Dados</label>
+                        <input type="checkbox" name="chbGrava" id="idGrava" value="gravar">
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Genêro</legend>
+                        <select name="selGenero" id="idGenero">
+                            <option selected="selected" value="-">Selecione uma opção</option>
+                            <option value="m">Masculino</option>
+                            <option value="f">Feminino</option>
+                            <option value="o">Outros</option>
+                        </select>
+                    </fieldset>
+                    </div>
+                    <div class="btn">
+                        <button onclick="document.write('Olá Mundo!')" type="submit">Login</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </footer>
+
+
+    <!-- <script>
+        //COMENTÁRIO DE LINHA
+        /*
+            COMENTÁRIO DE BLOCO
+        */
+
+        //Declarando variáveis com a palavra reservada var.
+        var nr1 = 10;
+        var nr2 = 5;
+
+        //Realizando a soma dos valores direto!
+        console.log(nr1+nr2);
+
+        //Declarando variáveis com a palavra reservada var.
+        var nr3 = "10";
+        var nr4 = "5";
+
+        //Realizando a soma dos valores direto!
+        console.log(nr3+nr4);
+        //Utilizando uma função interna de parseamento
+        console.log( parseInt(nr3) + parseInt(nr4));
+        //Realizando a subtração dos valores direto!
+        console.log("RESULTADO DA SUBTRAÇÃO: " + (parseInt(nr3) - parseInt(nr4)));
+
+        //Realizando a divisão dos valores direto!
+        console.log("RESULTADO DA DIVISÃO: " + (parseInt(nr3) / parseInt(nr4)));
+
+        //Realizando o processo para recuperar o resto da divisão.
+        console.log(`RESTO DA DIVISÃO DE ${nr3} POR ${nr4} = ${(parseInt(nr3) % parseInt(nr4))}`);
+
+    </script> -->
+
+</body>
+
+</html>
